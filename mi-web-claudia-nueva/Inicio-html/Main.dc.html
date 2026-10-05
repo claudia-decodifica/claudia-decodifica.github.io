@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Claudia Dueñas — Portafolio</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&amp;family=Instrument+Serif:ital@1&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0A0A12}
+a{color:inherit;text-decoration:none}
+.nav a{padding:10px 4px;border-bottom:2px solid transparent}
+.nav a:hover{border-bottom-color:#FFD43B}
+.mq{display:flex;flex-wrap:nowrap;width:max-content;animation:mq 28s linear infinite}
+.ring{animation:spin 26s linear infinite;transform-origin:50% 50%}
+.row{transition:background .2s,color .2s}
+.row:hover{background:#FF4D2E;color:#0A0A12}
+.pill{transition:background .2s,color .2s}
+.pill:hover{background:#0A0A12;color:#FF4D2E}
+@keyframes mq{to{transform:translateX(-50%)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.mq,.ring{animation:none}}
+</style>
+</helmet>
+
+<div style="font-family:'Space Mono',ui-monospace,monospace;color:#0A0A12">
+
+<!-- HERO -->
+<header id="inicio" style="background:#1D35F2;color:#fff;position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:860px;box-sizing:border-box">
+  <div style="display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between;padding:28px clamp(16px,4vw,56px) 0;position:relative;z-index:3">
+    <a href="#inicio" style="font-family:'Archivo',sans-serif;font-weight:900;font-size:34px;letter-spacing:-0.04em;line-height:1">CD<span style="color:#FF4D2E">.</span></a>
+    <nav class="nav" style="display:flex;flex-wrap:wrap;gap:8px 28px;font-size:13px;letter-spacing:.08em;text-transform:uppercase">
+      <a href="#sobre">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#blog">Blog</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase">Portafolio / 2026</div>
+  </div>
+
+  <div style="flex:1;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:0 clamp(16px,4vw,56px) 48px">
+    <!-- ASCII orb -->
+    <pre aria-hidden="true" style="position:absolute;top:16px;right:clamp(0px,4vw,72px);margin:0;font-family:'Space Mono',monospace;font-size:clamp(5px,.82vw,10px);line-height:1.04;color:#FF6A4D;opacity:.95;z-index:1;pointer-events:none">{{ascii}}</pre>
+
+
+    <!-- text ring -->
+    <div aria-hidden="true" style="position:absolute;right:clamp(8px,4vw,64px);bottom:24px;width:clamp(150px,22vw,330px);aspect-ratio:1;z-index:1">
+      <svg class="ring" viewBox="0 0 300 300" style="width:100%;height:100%;display:block">
+        <defs><path id="ringpath" d="M 150,150 m -112,0 a 112,112 0 1,1 224,0 a 112,112 0 1,1 -224,0"></path></defs>
+        <text font-family="Archivo, sans-serif" font-weight="900" font-size="23" fill="#FFD43B"><textPath href="#ringpath" textLength="700" lengthAdjust="spacing">EDUCACIÓN / DATOS / NEGOCIOS / PUENTES / COMUNIDAD /</textPath></text>
+      </svg>
+    </div>
+
+    <h1 style="margin:0;position:relative;z-index:2;font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(68px,18.5vw,285px);line-height:.82;letter-spacing:-0.055em;text-transform:uppercase">Claudia<br>Dueñas<span style="color:#FF4D2E">.</span></h1>
+    <p style="margin:28px 0 0;position:relative;z-index:2;max-width:640px;font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(26px,3.4vw,50px);line-height:1.05">Construyo puentes entre personas, negocios y tecnología.</p>
+  </div>
+
+  <div style="border-top:1px solid rgba(255,255,255,.5);overflow:hidden;padding:14px 0;font-size:13px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap" aria-hidden="true">
+    <div class="mq">
+      <span style="padding-right:40px">Educación / Gestión de PME / Análisis de datos / Python / SQL / Business intelligence / Machine learning /</span>
+      <span style="padding-right:40px">Educación / Gestión de PME / Análisis de datos / Python / SQL / Business intelligence / Machine learning /</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- SOBRE MÍ -->
+<section id="sobre" style="background:#F1EEE4;padding:clamp(56px,8vw,120px) clamp(16px,4vw,56px);box-sizing:border-box">
+  <div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid #0A0A12;padding-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><span>01 / Sobre mí</span><span>Perfil</span></div>
+  <div style="display:flex;flex-wrap:wrap;gap:48px;margin-top:48px;align-items:flex-start">
+    <div style="flex:2 1 520px;min-width:0">
+      <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(38px,6.4vw,100px);line-height:.9;letter-spacing:-0.05em;text-transform:uppercase">Profe de origen.<br><span style="color:#1D35F2">Analista en construcción</span><span style="color:#FF4D2E">.</span></h2>
+      <p style="margin:40px 0 0;max-width:560px;font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(24px,2.6vw,36px);line-height:1.15">Máster en Ciencias de la Educación. Estudio Gestión de PME y construyo, proyecto a proyecto, mi camino en el análisis de datos.</p>
+      <div style="margin-top:48px;max-width:640px;border-top:2px solid #0A0A12;font-size:14px">
+        <div style="display:flex;gap:16px;padding:14px 0;border-bottom:1px solid #0A0A12"><span style="flex:0 0 140px;letter-spacing:.1em;text-transform:uppercase">Formación</span><span style="flex:1">Ciencias de la Educación</span></div>
+        <div style="display:flex;gap:16px;padding:14px 0;border-bottom:1px solid #0A0A12"><span style="flex:0 0 140px;letter-spacing:.1em;text-transform:uppercase">Estudiando</span><span style="flex:1">Gestión de pequeñas empresas</span></div>
+        <div style="display:flex;gap:16px;padding:14px 0;border-bottom:1px solid #0A0A12"><span style="flex:0 0 140px;letter-spacing:.1em;text-transform:uppercase">Aprendiendo</span><span style="flex:1">Python / SQL / BI / Machine learning</span></div>
+      </div>
+    </div>
+    <div style="flex:1 1 280px;min-width:0;max-width:440px;position:relative;margin-bottom:56px">
+      <div style="position:relative;aspect-ratio:2/3;overflow:hidden;background:#0A0A12">
+        <img src="./assets/44755c459b77f98eaf1f1ec89ee41c8b.jpg" alt="Claudia sonriendo en una mesa con flores amarillas" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block">
+        <span style="position:absolute;left:0;top:0;font-size:11px;letter-spacing:.12em;color:#0A0A12;background:#F1EEE4;padding:6px 10px">FIG. 01</span>
+        <span style="position:absolute;right:0;bottom:0;font-size:11px;letter-spacing:.12em;color:#0A0A12;background:#F1EEE4;padding:6px 10px">FOTO: BRUNO HILÁRIO</span>
+      </div>
+      <div style="position:absolute;right:12px;bottom:-56px;width:42%;aspect-ratio:4/5;overflow:hidden;border:2px solid #0A0A12;background-color:#1D35F2;background-image:repeating-linear-gradient(0deg,transparent 0 23px,rgba(255,255,255,.22) 23px 24px),repeating-linear-gradient(90deg,transparent 0 23px,rgba(255,255,255,.22) 23px 24px)">
+        <div aria-hidden="true" style="position:absolute;left:10%;top:16%;width:80%;height:80%;border-radius:50%;background:#FF4D2E"></div>
+        <img src="./assets/8d1f8557b28344429c3f09924529fe2f.png" alt="Retrato recortado de Claudia" style="position:absolute;left:0;bottom:0;width:100%;height:100%;object-fit:contain;object-position:center bottom;display:block">
+        <span style="position:absolute;left:6px;top:4px;font-size:10px;letter-spacing:.12em;color:#fff">FIG. 03</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" style="position:relative;overflow:hidden;background:#1D35F2;color:#fff;padding:clamp(56px,8vw,120px) clamp(16px,4vw,56px);box-sizing:border-box">
+  <div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid #fff;padding-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><span>02 / Project: Servicios</span><span>Escala 1:2 / Rev. 01</span></div>
+      <!-- carita de formas -->
+  <div aria-hidden="true" style="position:absolute;right:clamp(16px,6vw,96px);top:clamp(96px,10vw,150px);width:200px;height:170px;z-index:1;transform:scale(1.15);transform-origin:top right">
+    <div style="position:absolute;left:0;top:0;width:62px;height:62px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#FFF0A0,#F2B705 58%,#7A5400)"></div>
+    <div style="position:absolute;left:92px;top:14px;width:62px;height:62px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#FFF0A0,#F2B705 58%,#7A5400)"></div>
+    <div style="position:absolute;left:52px;top:30px;width:64px;height:84px;background:linear-gradient(100deg,#7CE070,#2FBF4A 55%,#145E24);clip-path:polygon(50% 0,100% 100%,0 100%)"></div>
+    <div style="position:absolute;left:96px;top:104px;width:96px;height:48px;border:20px solid #E02B20;border-top:none;border-radius:0 0 96px 96px;box-sizing:border-box;transform:rotate(-14deg)"></div>
+  </div>
+  <h2 style="margin:40px 0 0;font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(52px,11vw,170px);line-height:.86;letter-spacing:-0.05em;text-transform:uppercase">Cuatro<br>módulos<span style="color:#FFD43B">.</span></h2>
+
+  <div style="display:flex;flex-wrap:wrap;gap:56px;margin-top:56px;align-items:flex-start">
+    <div style="flex:1 1 380px;min-width:0;max-width:600px" aria-hidden="true">
+      <svg viewBox="0 0 600 640" style="width:100%;height:auto;display:block" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round">
+        <line x1="260" y1="10" x2="260" y2="630" stroke-dasharray="6 7" stroke-opacity=".7"></line>
+        <!-- slab 1 -->
+        <ellipse cx="260" cy="90" rx="150" ry="34"></ellipse><ellipse cx="260" cy="90" rx="104" ry="22" stroke-opacity=".6"></ellipse>
+        <path d="M110 90 V114 M410 90 V114 M110 114 A150 34 0 0 0 410 114"></path>
+        <line x1="410" y1="100" x2="446" y2="100"></line><circle cx="410" cy="100" r="3" fill="#fff"></circle>
+        <!-- slab 2 -->
+        <ellipse cx="260" cy="230" rx="150" ry="34"></ellipse><ellipse cx="260" cy="230" rx="104" ry="22" stroke-opacity=".6"></ellipse>
+        <path d="M110 230 V254 M410 230 V254 M110 254 A150 34 0 0 0 410 254"></path>
+        <path d="M200 230 h120 M220 222 h80 M220 238 h80" stroke-opacity=".6"></path>
+        <line x1="410" y1="240" x2="446" y2="240"></line><circle cx="410" cy="240" r="3" fill="#fff"></circle>
+        <!-- slab 3 -->
+        <ellipse cx="260" cy="370" rx="150" ry="34"></ellipse><ellipse cx="260" cy="370" rx="104" ry="22" stroke-opacity=".6"></ellipse>
+        <path d="M110 370 V394 M410 370 V394 M110 394 A150 34 0 0 0 410 394"></path>
+        <path d="M170 370 q45 -26 90 0 t90 0" stroke-opacity=".7"></path>
+        <line x1="410" y1="380" x2="446" y2="380"></line><circle cx="410" cy="380" r="3" fill="#fff"></circle>
+        <!-- slab 4 -->
+        <ellipse cx="260" cy="510" rx="150" ry="34"></ellipse><ellipse cx="260" cy="510" rx="104" ry="22" stroke-opacity=".6"></ellipse>
+        <path d="M110 510 V534 M410 510 V534 M110 534 A150 34 0 0 0 410 534"></path>
+        <circle cx="215" cy="510" r="9" stroke-opacity=".7"></circle><circle cx="260" cy="500" r="9" stroke-opacity=".7"></circle><circle cx="305" cy="510" r="9" stroke-opacity=".7"></circle>
+        <line x1="410" y1="520" x2="446" y2="520"></line><circle cx="410" cy="520" r="3" fill="#fff"></circle>
+        <g font-family="Space Mono, monospace" font-size="13" fill="#fff" stroke="none" letter-spacing="1">
+          <text x="452" y="104">01 DISEÑO</text>
+          <text x="452" y="244">02 DATOS</text>
+          <text x="452" y="384">03 COMUNICACIÓN</text>
+          <text x="452" y="524">04 COMUNIDAD</text>
+          <text x="20" y="40" font-size="11">DRAWN BY: CD</text>
+          <text x="20" y="624" font-size="11">FECHA: 2026-10</text>
+        </g>
+      </svg>
+    </div>
+
+    <div style="flex:1 1 380px;min-width:0">
+      <sc-for list="{{servicios}}" as="s" hint-placeholder-count="3">
+        <article style="display:flex;gap:24px;padding:28px 0;border-top:1px solid #fff">
+          <div style="flex:0 0 56px;font-size:14px;letter-spacing:.1em;padding-top:10px">{{s.n}}</div>
+          <div style="flex:1;min-width:0">
+            <h3 style="margin:0;font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(30px,3.6vw,52px);line-height:.95;letter-spacing:-0.035em;text-transform:uppercase">{{s.t}}</h3>
+            <p style="margin:14px 0 0;font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(20px,1.9vw,27px);line-height:1.15;max-width:480px">{{s.d}}</p>
+          </div>
+        </article>
+      </sc-for>
+      <div style="border-top:1px solid #fff"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog" style="background:#0A0A12;color:#F1EEE4;padding:clamp(56px,8vw,120px) clamp(16px,4vw,56px);box-sizing:border-box">
+  <div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid #F1EEE4;padding-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><span>03 / Ideas en proceso</span><span>Cuaderno</span></div>
+  <div style="display:flex;flex-wrap:wrap;gap:32px 48px;align-items:flex-end;justify-content:space-between;margin-top:40px">
+    <div style="flex:1 1 420px;min-width:0">
+      <h2 style="margin:0;font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(88px,20vw,320px);line-height:.8;letter-spacing:-0.06em">Blog<span style="color:#FF4D2E">.</span></h2>
+      <p style="margin:24px 0 0;font-size:14px;letter-spacing:.16em;text-transform:uppercase">Aprendizaje, datos y vida en común.</p>
+    </div>
+    <div style="flex:0 1 300px;min-width:200px;position:relative;aspect-ratio:3/4;background:#1D35F2;overflow:hidden">
+      <img src="./assets/a5400aacb4e569c0f791ad158955db09.jpg" alt="Claudia de pie en un pasillo de ladrillo y hormigón" style="width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.15);mix-blend-mode:luminosity">
+      <span style="position:absolute;left:10px;top:8px;font-size:11px;letter-spacing:.12em;color:#fff">FIG. 02</span>
+    </div>
+  </div>
+  <div style="margin-top:56px;border-bottom:1px solid #F1EEE4">
+    <sc-for list="{{posts}}" as="p" hint-placeholder-count="3">
+      <a class="row" href="#blog" style="display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;padding:26px 8px;border-top:1px solid #F1EEE4">
+        <span style="flex:0 0 48px;font-size:14px">{{p.n}}</span>
+        <span style="flex:1 1 320px;min-width:0;font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(26px,3.6vw,52px);line-height:1;letter-spacing:-0.035em;text-transform:uppercase">{{p.t}}</span>
+        <span style="flex:0 0 auto;font-size:12px;letter-spacing:.14em;text-transform:uppercase;border:1px solid currentColor;padding:6px 12px">{{p.tag}}</span>
+        <span style="flex:0 0 auto;font-size:13px;letter-spacing:.1em">[FECHA]</span>
+      </a>
+    </sc-for>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" style="background:#FF4D2E;color:#0A0A12;padding:clamp(56px,8vw,120px) clamp(16px,4vw,56px);box-sizing:border-box">
+  <div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid #0A0A12;padding-bottom:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px"><span>04 / Contacto</span><span>Disponible</span></div>
+  <div style="display:flex;flex-wrap:wrap;gap:32px 56px;align-items:flex-end;justify-content:space-between;margin-top:40px">
+    <h2 style="flex:1 1 420px;min-width:0;margin:0;font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(58px,13vw,210px);line-height:.84;letter-spacing:-0.055em;text-transform:uppercase">Hablemos<span style="color:#F1EEE4">.</span></h2>
+    <div style="flex:0 1 320px;min-width:200px;aspect-ratio:3/4;border:2px solid #0A0A12;overflow:hidden">
+      <img src="./assets/3fb225edb1d43f78ca0591f7eb30259a.jpg" alt="Claudia sentada en una escalera iluminada en morado" style="width:100%;height:100%;object-fit:cover;display:block">
+    </div>
+  </div>
+  <div style="margin-top:48px;display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+    <a class="pill" href="#contacto" style="display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border:2px solid #0A0A12;border-radius:999px;font-size:15px;letter-spacing:.08em;text-transform:uppercase;font-weight:700">[TU EMAIL]</a>
+    <a class="pill" href="https://github.com/claudia-decodifica" style="display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border:2px solid #0A0A12;border-radius:999px;font-size:15px;letter-spacing:.08em;text-transform:uppercase;font-weight:700">GitHub</a>
+    <a class="pill" href="https://www.linkedin.com/in/claudiarivero-edu" style="display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border:2px solid #0A0A12;border-radius:999px;font-size:15px;letter-spacing:.08em;text-transform:uppercase;font-weight:700">LinkedIn</a>
+  </div>
+</section>
+</main>
+
+<footer style="background:#0A0A12;color:#F1EEE4;padding:24px clamp(16px,4vw,56px);display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between;font-size:12px;letter-spacing:.12em;text-transform:uppercase">
+  <span>© 2026 Claudia Dueñas</span>
+  <span>HTML + CSS / GitHub Pages</span>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":4300}}'>
+class Component extends DCLogic {
+renderVals() {
+const ascii = `                                              iccccc::ccia
+                                           acciaaaic:c::---:ci
+                                         :callllulldadaaaiac::--
+                                      i--cllluuddaiiiiiaaiiiaii:--
+                                    ci:cduli:::--........----::cc:.
+                                    ai:dulc--..................----.
+                                   cuciuli--......        .......---.
+                                  cldclud--.......         .......--.
+                                  cIiaudc--........        ........---
+                                  -lada:.........          ........---
+                                   :cic--............        ......--
+                                  -.-c:-...........-...............-.
+                                 .. ..-......-::::-........-.....---.
+                                 . ...-..........--...  .---:::------
+                                 - .  ......   ......   ....-----..-.
+                                   .  ......    .....    .....   ...-
+                                     .................   ...     .....
+                                   -:--.........  ......--.-..  ...-
+                                    ac-.......-:-.................-
+                                      .........-.    .....ci....-..
+                                       ....... ..... . . .::....-.
+                                       c....... .........-. ..--.
+                                        .--....    .........-----:-::
+                                        :...-..           .--------... .-
+                                        :   ......      ..-.::--------.   .
+                                       ui      ..----------.dd.-----....    -
+                                      cli        ...--------ld-.----......   .
+                                      dldac-.         .....:ali:-.-.... ...    c
+                                    ldullddlldaicc:--::ccidlulldic:cicc:....    .
+                                  dddllduldaadluuuuldluuuuullduliiiiiaadaic::---. -c
+                             lldddldddldlulllddddddllddddddldlllaiiaaiiiiiiicccc::---:ia
+                          dddddldddddddddlllluuulldddddllldaalaalaiiaiiiicccccccc:::::---a
+                      daadddaaauldddddddaldddaaaadddddddaiiiiccidliiiiiicciicciiicccccc:--c
+                  laiiiiiaddaiillddaadddaduaiaiiiccccccc::c:::::iddiciiccccciciiiiicccccc:cc
+               diicccccciiiaaiiduddaaaaaaaldiiicccccccccc::::::-caadiiicccciaiiaaaaaicccaaiac
+            dacc::cccccccciiiiadudaaaaaaaiddcc:::::c::::::::::---iaddciccciaiciiaaadaiccadaadd
+         aaaaiccc::::cccccccciialdaaaiaaiiadcc::::cc:::::::c::::::aada:cccccciiccdadaacciddadi
+       c:idldaaicc:cc::cccccccciadiaiiiiiiildcc::::cc::::::::::::::idlc:cccccccccidaddaccldddii
+      c:caaddaaiiiccccccccccccccidciiiiciiclliiic::::::::::-::::::::ildc:cccccccccddadaaauddda:
+      :cccaaddaiiiiicccccccccccccdcciiiiiiiilccii::::-::cc:::::::::::ila:cccccccccidaadadulddac
+     aacicaaaadaiiiaiccccccccccccdlaaiciiiccdc:ccc::::-:cc::::::::::::ida::cccccccciiaaaaludddai
+     adiacidaaadaiiiaiiicccccccccilaaaiiiiicdc:::cc::::::::::::::::::::cdicccc:ccccicciaadulddla
+     addaicaaadadaiiidiiiiciccccciliaaiciiicai:::::::--:::::::::::::::::idc:cccccccci::iaadullldac
+     adddaiiaaddaldiiaaiiiiiiiccccldiaiiiiaiaa-::::::::::---:---::::::::caaccccccccciaiccciullludia
+    :iddddacaaaldaldiaddaaciaiicccddiaaiiiiiid::::::::::-------------::::cai:cccccccciiaaaaluuuuald
+   aaidddddaadidlladlaalldiiaaiic:aliaiiiiiicdc::::::::-----------------::cac::ccccc:caiaailullallai
+   adaadddddadaidllaaladldliadaai:aliaaiiiaicdc:::::::::-:---------------:-cacccccccc:idddiauldludaa
+   dddaddddddddiialldaaadlllalaaicaliaiiiaaicac:::::::::::------------------cicccccccc:aldladuuuldadi
+  caaddddddadddaaaadlddddluudldaicalaaaiaaaicac:::::::::::---------------::::aiiiiiiicccldddduullddda
+  :adddldllaadddaaaaddlllluuddaiiialaaiiiaaaiac:::::::::::---:----:::::c::cccaaiaaaiiiiilldlluuullldlal
+  :ddddaddlldddaaaaaaadlllllldiaiialaaaiiaaaiai:::::::::-:-::::::cccciiiicciiadiiaaaaaaalullluuuuudluuli
+  :adddddaadlllaaaaaaaddlllulaadiialaaaaaaaaaai:::::::::::cciiiaaaaaiiiiiiiiaddaiadadldduullluuuulluuddii
+  -daaddddddaadddddaaaaddluuululaidlaaaaaaaaiaa::ccccciiiiiaaaaaaiiiiiciiiiaddldaadddllluuuluuuuluulldacc
+  -aadddaddlldaadddddddddluuIldudidlaaaaaaaaaadiciiiaaaaaiiiiiiiiiciiiiaaddlllulaadddddluuuluuuulldddddlla
+  iadddddddddlldadlllddlldluIuallidlaaaaaaaaaaddiiiadddaaicciiiaaaaaddllluuuulludadddldduulluuuulllllluldda
+  ildddddddddddlldadllllllllulddladIdaaaaaaaaadlaadddddddaaddddlllluuuullddddlllladdddldluuuuuuuullldaaaaaa
+  caddddddaddddaddddddluuuuuuuddladIuaaddaadaadlullluuuuuuuuuulullllddaiiciadaaaddadddddluuuuuuuulldaiciadld
+  aadddddaaadddadaaddaddluuuuuldldduIdadddddaadduullllddaaaaaiiiiiiccciciiiaaaaaadadddddluuuuuuuuldaiiiiaddl
+  dldllllddaaaaaaaaaaaaddluuuuldlddIIlddddddaadduuuulllaic::::::::::cccciiiaiaiaadddddllluuuuuIudic:--:cadld
+  alllllllldddadddaddaaddluuuuldldduuuldddddddddlIuulllllddaaaaiicc:::ccccciiiiiadldddlllllldll:.      .-cd
+  alllllllllldddddddddddluuuuuudllduIuldddddddddduuudaaddddddddddaaiicccciiiiiaaddlddddllldddli ..       .d`;
+return {
+ascii,
+servicios: [
+{ n: '01', t: 'Educación y formación', d: 'Diseño y facilitación de formación para personas adultas y equipos.' },
+{ n: '02', t: 'Análisis de datos', d: 'De los datos de tu negocio a decisiones claras: Python, análisis y visualización.' },
+{ n: '03', t: 'Gestión para PME', d: 'Mirar la pequeña empresa con números, procesos y un siguiente paso concreto.' }
+],
+posts: [
+{ n: '01', t: '[Título del primer artículo]', tag: 'Datos' },
+{ n: '02', t: '[Título del segundo artículo]', tag: 'Educación' },
+{ n: '03', t: '[Título del tercer artículo]', tag: 'Proceso' }
+]
+};
+}
+}
+</script>
+</body>
+</html>
