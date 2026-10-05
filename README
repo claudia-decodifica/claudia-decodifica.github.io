@@ -1,0 +1,62 @@
+# Claudia Dueñas — Sitio web personal
+
+Mi portafolio y espacio personal en la web: quién soy, qué hago y en qué estoy trabajando.
+
+## Descripción
+
+Este repositorio contiene el código fuente de la página personal de Claudia Dueñas, creada para presentar su trayectoria, servicios, ideas y forma de contacto. La web está diseñada como un espacio sencillo y cercano, con un estilo visual inspirado en un cuaderno cuadriculado en tonos azules y blancos, con acento naranja.
+
+## Sitio web
+
+🔗 Sitio: https://claudia-decodifica.github.io
+
+## Secciones
+
+- Sobre mí: trayectoria en educación, gestión de pequeñas empresas y análisis de datos.
+- Servicios: en qué puedo ayudar.
+- Blog: ideas en proceso y notas de aprendizaje sobre datos y vida en común.
+- Contacto: cómo escribirme.
+
+## Tecnologías
+
+- HTML
+- CSS
+- JavaScript (si se añade más interacción en el futuro)
+- Git
+- GitHub Pages
+
+## Estructura del proyecto
+
+```text
+mi-web-claudia/
+├── index.html      # contenido principal de la web
+├── style.css       # estilos y diseño visual
+├── README.md       # documentación del proyecto
+├── assets/         # recursos gráficos y multimedia
+├── js/             # scripts opcionales
+└── .gitignore
+```
+
+## Cómo verlo en local
+
+Abre directamente el archivo `index.html` en tu navegador. No requiere instalación adicional.
+
+Si prefieres una vista más cercana al entorno real, puedes ejecutar un servidor local desde la carpeta del proyecto:
+
+```bash
+python3 -m http.server 8000
+```
+
+Luego abre en el navegador:
+
+```text
+http://localhost:8000
+```
+
+## Estado
+
+En construcción. Voy mejorando el contenido y el diseño poco a poco.
+
+## Licencia
+
+Este proyecto no incluye una licencia específica en este momento.
